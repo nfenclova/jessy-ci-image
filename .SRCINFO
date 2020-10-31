@@ -1,0 +1,22 @@
+pkgbase = x86_64-elf-gcc-large
+	pkgdesc = The GNU Compiler Collection - cross compiler for x86_64-elf target (large code model libgcc)
+	pkgver = 10.2.0
+	pkgrel = 1
+	url = http://gcc.gnu.org/
+	arch = x86_64
+	license = GPL
+	license = LGPL
+	depends = x86_64-elf-binutils
+	depends = zlib
+	depends = libmpc
+	depends = mpfr
+	depends = gmp
+	conflicts = x86_64-elf-gcc
+	options = !emptydirs
+	source = https://mirrors.kernel.org/gnu/gcc/gcc-10.2.0/gcc-10.2.0.tar.xz
+	source = libiberty-ignore-cflags.patch
+	sha256sums = b8dd4368bb9c7f0b98188317ee0254dd8cc99d1e3a18d0ff146c855fe16c1d8c
+	sha256sums = 8b2aea00e98f7c311b1d0fb14e4b435a03c65fde32bc992c924edb6fa7b83c9c
+
+pkgname = x86_64-elf-gcc-large
+
